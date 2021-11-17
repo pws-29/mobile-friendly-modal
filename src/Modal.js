@@ -67,6 +67,15 @@ const Content = styled.div`
 const Header = styled.header`
   padding: 16px;
   padding-bottom: 8px;
+
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
+    padding: 4px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(0deg 0% 80%);
+  }
 `;
 
 const CloseButton = styled.button`
@@ -79,6 +88,11 @@ const CloseButton = styled.button`
   height: 48px;
   cursor: pointer;
   color: white;
+
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
+    position: static; /* Now we have a display flex on header */
+    color: black;
+  }
 `;
 
 const Title = styled.h2`
