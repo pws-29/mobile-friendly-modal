@@ -56,6 +56,12 @@ const Content = styled.div`
   background: white;
   border-radius: 8px;
   width: 65%;
+
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
 `;
 
 const Header = styled.header`
